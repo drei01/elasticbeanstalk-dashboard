@@ -9,6 +9,7 @@ target/*
 settings/*
 *.springBeans
 *.classpath
+*.settings
 
 ## generic files to ignore
 *~
