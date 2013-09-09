@@ -1,6 +1,8 @@
 elasticbeanstalk-dashboard
 ==========================
 
+![elasticbeanstalk dashboard](https://s3-eu-west-1.amazonaws.com/nw-test-images/elasticbeanstalk-dashboard.png "ElasticBeanstalk Dashboard")
+
 Installation
 ------
 
