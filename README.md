@@ -1,9 +1,6 @@
 elasticbeanstalk-dashboard
 ==========================
 
-A Dashboard for AWS ElasticBeanstalk
-======
-
 Installation
 ------
 
