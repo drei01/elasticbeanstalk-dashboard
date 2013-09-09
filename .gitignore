@@ -6,6 +6,9 @@
 *.ear
 
 target/*
+settings/*
+*.springBeans
+*.classpath
 
 ## generic files to ignore
 *~
