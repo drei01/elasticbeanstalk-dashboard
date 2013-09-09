@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="src/main/webapp/assets/js/knockout-2.3.0.js|src/main/webapp/assets/js/knockout-mapping.js|src/main/webapp/assets/js/moment.js" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

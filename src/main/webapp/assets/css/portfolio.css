@@ -1,0 +1,172 @@
+
+body {
+  background-color: #f5f5f5;
+}
+
+#main-content {
+  max-width: 940px;
+  padding: 10px 20px 0px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.table th.number, .table td.number {
+  text-align: right;
+}
+
+.table td.trade-buttons {
+  text-align: center;
+}
+
+.table tfoot {
+  font-weight: bold;
+}
+
+.container-fluid{
+	max-width:960px;
+	margin:0 auto;
+}
+
+.popover.visible{
+	display: block;
+	position: relative;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  display: none;
+}
+
+input[type="checkbox"] + label{
+	position: relative;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: #777777;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+input[type="checkbox"] + label span:after {
+  content: 'SHOW';
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  padding: 1px 0 0 0;
+  font-size: 10px;
+  line-height: 15px;
+}
+input[type="checkbox"] + label span:before {
+  content: '';
+  width: 80px;
+  height: 20px;
+  background: #aaaaaa;
+  -webkit-transform: skew(35deg);
+  -moz-transform: skew(35deg);
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-right: -15px;
+}
+
+input[type="checkbox"]:checked + label span {
+  background: #0099cc;
+}
+input[type="checkbox"]:checked + label span:before {
+  content: '';
+  width: 50px;
+  height: 20px;
+  background: #aaaaaa;
+  -webkit-transform: skew(35deg);
+  -moz-transform: skew(35deg);
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-left: -50px;
+}
+input[type="checkbox"]:checked + label span:after {
+  content: 'HIDE';
+  color: #fff;
+  position: absolute;
+  top: 1px;
+  left: 55px;
+}
+
+input[type="checkbox"] + label .status {
+  visibility: none;
+}
+
+input[type="checkbox"]:checked + label .status {
+  visibility: visible;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+	
+	/* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative; 
+		white-space: normal;
+		text-align:left;
+	}
+	
+	#no-more-tables td.titled{
+		padding-left: 50%;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+}
