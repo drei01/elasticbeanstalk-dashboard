@@ -10,6 +10,7 @@ settings/*
 *.springBeans
 *.classpath
 *.settings
+*.project
 
 ## generic files to ignore
 *~
@@ -17,3 +18,4 @@ settings/*
 *.DS_Store
 *.swp
 *.out
+/target
